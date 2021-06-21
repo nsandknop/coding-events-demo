@@ -5,6 +5,7 @@
 
 <header th:replace="fragments :: header"></header>
 
+
 <form method="post">
     <div class="form-group">
         <label>Name
@@ -33,6 +34,7 @@
             ></option>
         </select>
         </label>
+        <p class="error" th:errors="${event.contactEmail}"></p>
     </div>
     <div class="form-group">
         <input type="submit" value="Create" class="btn btn-success">
